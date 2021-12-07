@@ -17,19 +17,15 @@ pipeline {
         }
     }
 
-    stages{
-        stage("test"){
-            steps{
-                echo 'Running Unit Tests on worker app'
-            }
+    stage("test"){
+        steps{
+            echo 'Running Unit Tests on worker app'
         }
     }
 
-    stages{
-        stage("package"){
-            steps{
-                echo 'Packaging worker app'
-            }
+    stage("package"){
+        steps{
+            echo 'Packaging worker app'
         }
     }
 
